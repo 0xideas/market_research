@@ -26,7 +26,6 @@ def ParseReviews(asin):
 	#getting the all reviews page
 	ALL_REVIEWS = './/a[@data-hook="see-all-reviews-link-foot"]/@href'
 	all_reviews_link = parser.xpath(ALL_REVIEWS)[0]
-	print(all_reviews_link)
 	all_reviews_link = 'https://www.amazon.com' + all_reviews_link
 
 	#TEMPORARY
